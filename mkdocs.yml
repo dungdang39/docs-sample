@@ -1,0 +1,14 @@
+site_name: 그누보드6
+nav:
+    - 홈: index.md
+    - 설명: about.md
+theme:
+    name: material
+markdown_extensions:
+    # Python Markdown
+    - toc:
+          permalink: true
+
+    # Python Markdown Extensions
+    - pymdownx.highlight
+    - pymdownx.superfences
