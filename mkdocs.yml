@@ -2,13 +2,30 @@ site_name: 그누보드6
 nav:
     - 홈: index.md
     - 설명: about.md
+    
+# Theme
 theme:
-    name: material
-markdown_extensions:
-    # Python Markdown
-    - toc:
-          permalink: true
+  name: material
+  features:
+    - navigation.sections
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
-    # Python Markdown Extensions
-    - pymdownx.highlight
-    - pymdownx.superfences
+# Markdown extensions
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
